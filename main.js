@@ -6,6 +6,8 @@ import TileWMS from 'ol/source/TileWMS';
 
 const map = new Map({
   target: 'map',
+  
+  target: 'map2',
   layers: [
     new TileLayer({
       source: new OSM()
