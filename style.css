@@ -1,12 +1,271 @@
 @import "node_modules/ol/ol.css";
 
 html, body {
-  margin: 0;
-  height: 100%;
+  
+  
+  background: #FBFCFA;
 }
+
+.pic3 {
+  position: absolute;
+  left: 40px;
+  top: 1657px;
+  z-index: 3;
+}
+
+
+.pic2 {
+  position: absolute;
+  left: 40px;
+  top: 1100px;
+  z-index: 3;
+}
+
+
+.pic {
+  position: absolute;
+  top: 45px;
+  left: 25px;
+  z-index: 2;
+}
+
+nav {
+  margin: 100px 0;
+  position: absolute;
+  width: 220px;
+  height: 82px;
+  left: 25px;
+  top: -73px;
+  z-index: 1;
+  background: #be6e53a9;
+
+  
+}
+
+nav ul {
+  
+  display: inline-block;
+  background-color: #92403212;
+  
+}
+nav a {
+  position: absolute;
+  display: block;
+  padding: 0 10px;
+  color: #000000;
+  font-size: 20px;
+  line-height: 50px;
+  text-decoration: none;
+
+  
+}
+nav a:hover{
+  background-color:#e38271a6;
+  line-height: 2;
+}
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 70%;
+  
+}
+nav ul b:hover > ul {
+  display: inherit;
+  
+}
+nav ul ul li {
+  min-width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;;
+}
+.box {
+  position: absolute;
+width: 1259px;
+height: 223px;
+left: 260px;
+top: 26px;
+text-align: center;
+background: #F5ECE3;
+opacity: 95%;
+
+}
+.box2 {
+  position: absolute;
+  width: 220px;
+  height: 176px;
+  left: 25px;
+  top: 73px;
+  
+  background: #E8CEBF;
+}
+
+.inf {
+  position: absolute;
+width: 531px;
+height: 97px;
+left: 25px;
+top: 269px;
+
+background: #BE6E53;
+  text-align: center;
+}
+
+.inf1 {
+  position: absolute;
+width: 531px;
+height: 97px;
+left: 25px;
+top: 391px;
+
+background: #E8CEBF;
+  text-align: center;
+}
+
+.inf2 {
+  position: absolute;
+  width: 531px;
+  height: 67px;
+  left: 25px;
+  top: 543px;
+  
+  background: #F5ECE3;
+  text-align: center;
+}
+
+
 #map {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
+  width: 579px;
+  height: 401px;
+  left: 40px;
+  top: 647px;
+
+}
+#map2 {
+  position: absolute;
+  width: 904px;
+  height: 324px;
+  left: 597px;
+  top: 286px;
+}
+
+#map3 {
+  position: absolute;
+width: 1259px;
+height: 223px;
+left: 260px;
+top: 26px;
+opacity: 40%;
+}
+
+#map4 {
+  position: absolute;
+  width: 579px;
+  height: 401px;
+  left: 915px;
+  top: 1099px;
+
+}
+
+#map5 {
+  position: absolute;
+  width: 579px;
+  height: 401px;
+  left: 915px;
+  top: 1654px;
+
+}
+
+.back2 {
+  position: absolute;
+  width: 944px;
+  height: 790px;
+  left: 575px;
+  top: 269px;
+  
+  background: #69725dd2;
+
+}
+
+.back {
+  position: absolute;
+width: 531px;
+height: 426px;
+left: 25px;
+top: 635px;
+
+background: #A2A185;
+
+}
+
+.back4 {
+  position: absolute;
+width: 531px;
+height: 500px;
+left: 900px;
+top: 1086px;
+
+background: #E8CEBF;
+
+}
+
+.back5 {
+  position: absolute;
+width: 531px;
+height: 500px;
+left: 900px;
+top: 1640px;
+
+background: #A2A185;
+
+}
+
+.back44 {
+  position: absolute;
+width: 850px;
+height: 500px;
+left: 25px;
+top: 1087px;
+
+background: #BE6E53;
+
+}
+.back55 {
+  position: absolute;
+width: 850px;
+height: 500px;
+left: 25px;
+top: 1640px;
+
+background: #F5ECE3;
+
+}
+
+
+.text {
+  position: absolute;
+  width: 904px;
+  height: 324px;
+  left: 597px;
+  top: 616px;
+text-align: justify;
+
+}
+.text2 {
+  position: absolute;
+  left: 440px;
+  top: 1100px;
+  z-index: 3;
+text-align: justify;
+
+}
+
+.text3 {
+  position: absolute;
+  left: 640px;
+  top: 1650px;
+  z-index: 3;
+text-align: justify;
+
 }
