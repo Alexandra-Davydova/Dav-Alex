@@ -1,14 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="11.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Using OpenLayers with Vite</title>
-    <base href="http://map-app/html/">
+    <title>Образовательные кластеры в Красноярске</title>
+    <base target="_blank">
+
+
+    <style>
+      #topNubex {
+      position: fixed;
+      right: 45px;
+      bottom: 45px;
+       }
+      </style>
+      
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      
+      <script type="text/javascript">
+      $(function() {
+      $(window).scroll(function() {
+      if($(this).scrollTop() != 0) {
+      $('#topNubex').fadeIn();
+      } else {
+      $('#topNubex').fadeOut();
+      }
+      });
+      $('#topNubex').click(function() {
+      $('body,html').animate({scrollTop:0},700);
+      });
+      });
+      </script>
+
+
   </head>
   <body>
-    <div id="map"></div>
+
+    <div style="height:3000px"></div>
+    <div class="pic2"><img src="1.JPG" width="284" height="476"></div>
+    <div class="pic3"><img src="2.JPG" width="487" height="468"></div>
+    <div id="topNubex"><img src="pngwing.com.png" width="50px" height="50px" /></div>
+  
+    <div class="pic">
+    <img src="—Pngtree— icon_4697369.png" width="53"
+    height="53">
+  </div>
+  <nav>
+     <ul>
+      <b><a href="#">полезные ссылки</a>
+      <ul>
+        <li> <a href="http://retromap.ru/">retromap</a></li>
+          <li> <a href="https://pkk.rosreestr.ru/#/search/65.64951699999888,122.73014399999792/4/@mebz92soh"><p>Кадастровая карта</p></a></li>
+      
+        </ul>
+    </b>
+
+     </ul>
+  </nav>
+    
+
+    <div class="box">
+      <h1> Образовательные кластеры в Красноярске </h1>
+          </div>
+          <div class="box2"></div>
+       
+    <div class="inf">
+      <h2><a href ="\Саша\Запуск\qgis2web_2022_12_29-19_58_41_037666\index.html" style="color: #000000">Интерактивная карта Красноярска</a></h2>
+      <p>карта со слоями qgis</p>
+      </div> 
+      
+      <div class="inf1">
+      <h2><a href ="https://web-gis.admkrsk.ru/portal/map/imap/app.html#page=home&mode=sem-map&bank=9&layers=467,google_road&zoom=12&center=10345453.196256861,7559383.231690549" style="color: #000000">Интерактивная карта Красноярска</a></h2>
+      
+      </div>
+      
+      <div class="inf2">
+      <h2>Информация:</h2>
+          
+      </div>
+
+      <div class="back"> </div>
+      <div class="back2"> </div>
+      <div class="back4"> </div>
+      <div class="back5"> </div>
+      <div class="back44"> </div>
+      <div class="back55"> </div>
+    <div id="map"><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js">
+  
+          </script><script charset="utf-8">new DGWidgetLoader({"width":459,"height":401,"borderColor":"#a3a3a3","pos":{"lat":56.00541801002404,"lon":92.76602268218996,"zoom":16},"opt":{"city":"krasnoyarsk"},"org":[{"id":"986145966853046"}]});</script>
+          <noscript style="color:#c00;font-size:16px;font-weight:bold;"></noscript>
+      </div>
     <script type="module" src="./main.js"></script>
+    <div id="map2"></div>
+    
+    <div id="map3">
+    <iframe id="map_517403051" frameborder="0" width="1259px" height="223px" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe><script type="text/javascript">(function(e,t){var r=document.getElementById(e);r.contentWindow.document.open(),r.contentWindow.document.write(atob(t)),r.contentWindow.document.close()})("map_517403051", "PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiI2ZmNDcwMCIsInRpdGxlIjoiMEtIUXBOQ2oiLCJkZXNjcmlwdGlvbiI6IiIsInpJbmRleCI6MTAwMDAwMDAwMH0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbOTIuNzcwMTQ1LDU2LjAwMzk5NF19LCJpZCI6ODMxfSx7InR5cGUiOiJGZWF0dXJlIiwicHJvcGVydGllcyI6eyJjb2xvciI6IiNmZjQ3MDAiLCJ0aXRsZSI6IjBLSFFwTkNqIiwiZGVzY3JpcHRpb24iOiIiLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6WzkyLjgzODUxLDU2LjAxOTAyOF19LCJpZCI6ODM1fSx7InR5cGUiOiJGZWF0dXJlIiwicHJvcGVydGllcyI6eyJjb2xvciI6IiNmZjQ3MDAiLCJ0aXRsZSI6IjBLSFFwTkNqIiwiZGVzY3JpcHRpb24iOiIiLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6WzkyLjc2NzU2OCw1Ni4wMDU2MjhdfSwiaWQiOjgzOX0seyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsiY29sb3IiOiIjMDI4MWYyIiwidGl0bGUiOiIwSnJSZ05DdzBZSFFrOUNRMEtNPSIsImRlc2NyaXB0aW9uIjoiIiwiekluZGV4IjoxMDAwMDAwMDAwfSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOls5Mi44NjM5ODEsNTYuMDExODk3XX0sImlkIjoxMDM4fSx7InR5cGUiOiJGZWF0dXJlIiwicHJvcGVydGllcyI6eyJjb2xvciI6IiM1MDdkMGMiLCJ0aXRsZSI6IjBKelF0ZEMwMExqUmh0QzQwTDNSZ2RDNjBMalF1U0RSZzlDOTBMalFzdEMxMFlEUmdkQzQwWUxRdGRHQyIsImRlc2NyaXB0aW9uIjoiIiwiekluZGV4IjoxMDAwMDAwMDAwfSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOls5Mi45MDUwOTMsNTYuMDI0NjA4XX0sImlkIjoxMDQyfV0sIm1hcFBvc2l0aW9uIjp7ImxhdCI6NTYuMDA0MTM1OTY4NTAzOCwibG9uIjo5Mi44MzQ4NTY5MTk0NzMwMSwiem9vbSI6MTJ9LCJpc1doZWVsWm9vbUVuYWJsZWQiOnRydWV9Jyk8L3NjcmlwdD48c2NyaXB0IGFzeW5jPSIiIHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbS9ndGFnL2pzP2lkPVVBLTE1ODg2NjE2OC0xIj48L3NjcmlwdD48c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+KGZ1bmN0aW9uKGUpe2Z1bmN0aW9uIHQoKXtkYXRhTGF5ZXIucHVzaChhcmd1bWVudHMpfXdpbmRvdy5kYXRhTGF5ZXI9d2luZG93LmRhdGFMYXllcnx8W10sdCgianMiLG5ldyBEYXRlKSx0KCJjb25maWciLGUpLHdpbmRvdy5ndGFnPXR9KSgnVUEtMTU4ODY2MTY4LTEnKTwvc2NyaXB0PjwvYm9keT4=")</script>
+
+  </div>
+    
+<div class="text">
+  <p> Сегодня система современного среднего профессионального образования развивается в контексте рыночных модификаций, обусловленных социально-экономическими условиями развития общества, и эта новая реальность оказывает интенсивное влияние на развитие образования.
+  </p>
+    <p>Кластер – открытая образовательная система, в которой в результате сквозной вертикальной интеграции ступеней непрерывного образования и горизонтальной координации структур обеспечивается высокий уровень организационного объединения деятельности субъектов педагогического процесса.
+    </p>
+      <p>Образовательный кластер обеспечивает возможность непрерывного «погружения» студентов в сферу их будущей профессиональной деятельности, позволяет изучать, обобщать и накапливать передовой опыт, оперативно апробировать достижения науки, обновлять и обобщать организацию и содержание профессиональной подготовки. В его условиях открываются перспективные специальности, вводятся новые дисциплины и современные технологии обучения, появляется возможность выбора систем высшего образования. Достоинствами образовательного кластера являются качество, непрерывность, преемственность, доступность, конкурентоспособность образования.
+      </p>
+        <p> Курс на устойчивое развитие научно-образовательных кластеров предполагает учет того, какие ключевые точки роста существуют в республике, и что могут сделать различные по интересам группы для их развития. Чтобы его реализовать, необходим консенсус между деловыми и административными элитами региона.
+        </p>
+          <p> Одно из центральных мест в кластере занимает вуз, объединяющий вокруг себя образовательную ситуацию и учебные заведения. Это приводит к усилению науки, ее синтезу с практикой. Педагогические коллективы вузов и средних профессиональных учебных заведений проводят актуальные исследования по теории и практике образовательной деятельности и внедрению результатов в учебно-воспитательный процесс.
+          </p>
+
+</div>
+<div class="text2">
+  <h2> КрасГМУ
+  </h2>
+    <h3>
+      <a href ="https://krasgmu.ru/" style="color: #000000">Сайт университета</a>
+    </h3>
+
+</div>
+<div class="text3">
+  <h2> КрасГАУ
+  </h2>
+    <h3>
+      <a href ="http://www.kgau.ru/" style="color: #000000">Сайт университета</a>
+    </h3>
+
+</div>
+
+
+
+<div id="map4">
+  <a class="dg-widget-link" href="http://2gis.ru/krasnoyarsk/firm/986145966603782/center/92.90558338165285,56.024824758871304/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Красноярска</a><div class="dg-widget-link"><a href="http://2gis.ru/krasnoyarsk/firm/986145966603782/photos/986145966603782/center/92.90558338165285,56.024824758871304/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.ru/krasnoyarsk/center/92.905646,56.023801/zoom/16/routeTab/rsType/bus/to/92.905646,56.023801╎Красноярский государственный медицинский университет им. профессора В.Ф. Войно-Ясенецкого, Приемная ректора?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Красноярский государственный медицинский университет им. профессора В.Ф. Войно-Ясенецкого, Приемная ректора</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":500,"height":475,"borderColor":"#a3a3a3","pos":{"lat":56.024824758871304,"lon":92.90558338165285,"zoom":16},"opt":{"city":"krasnoyarsk"},"org":[{"id":"986145966603782"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>  
+</div>
+
+<div id="map5">
+  <a class="dg-widget-link" href="http://2gis.ru/krasnoyarsk/firm/986145966574388/center/92.86421298980714,56.013431372477484/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Красноярска</a><div class="dg-widget-link"><a href="http://2gis.ru/krasnoyarsk/firm/986145966574388/photos/986145966574388/center/92.86421298980714,56.013431372477484/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.ru/krasnoyarsk/center/92.864272,56.011833/zoom/16/routeTab/rsType/bus/to/92.864272,56.011833╎Красноярский государственный аграрный университет, Приемная ректора?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Красноярский государственный аграрный университет, Приемная ректора</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":500,"height":475,"borderColor":"#a3a3a3","pos":{"lat":56.013431372477484,"lon":92.86421298980714,"zoom":16},"opt":{"city":"krasnoyarsk"},"org":[{"id":"986145966574388"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+</div>
+
+
+
   </body>
 </html>
